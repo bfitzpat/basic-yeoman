@@ -1,0 +1,19 @@
+{
+  "name": "generator-mine",
+  "version": "0.1.0",
+  "description": "A sample generator created by yours truly.",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "glob": "^7.1.2",
+    "mkdirp": "^0.5.1",
+    "path": "^0.12.7",
+    "yeoman-assert": "^3.1.1",
+    "yeoman-generator": "^1.1.1",
+    "yeoman-test": "^1.7.2"
+  }
+}
