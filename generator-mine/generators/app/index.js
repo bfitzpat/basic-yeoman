@@ -4,15 +4,15 @@ var path = require('path');
 var mkdirp = require('mkdirp');
 
 
-module.exports = yeoman.extend({
-    initializing: {
-        files: function () {
-          this.folders = glob.sync('**/*/', {cwd: path.join(__dirname, 'templates')});
-          this.files = glob.sync('**/*', {cwd: path.join(__dirname, 'templates'), nodir: true});
+module.exports = class extends yeoman {
+    initializing() {
+        files : {
+            this.folders = glob.sync('**/*/', {cwd: path.join(__dirname, 'templates')});
+            this.files = glob.sync('**/*', {cwd: path.join(__dirname, 'templates'), nodir: true});
         }
-      },
+    }
 
-    prompting: function() {
+    prompting() {
         this.log('      _                             _');
         this.log('     / \\     _ __     __ _    ___  | |__     ___');
         this.log('    / _ \\   | \'_ \\   / _` |  / __| | \'_ \\   / _ \\');
@@ -59,11 +59,11 @@ module.exports = yeoman.extend({
                 this.log('camel DSL', props.camelDSL);
                 this.log('package name', props.package);
             }.bind(this));
-        },
+        }
         
         //writing logic here
-        writing: {
-            app: function () {
+        writing() {
+            app: {
                 var userProps = this.props;
                 //userProps.options = this.options;
             
@@ -93,11 +93,11 @@ module.exports = yeoman.extend({
                 this.destinationRoot()
             );
         }
-    },
+    }
 
     //Install Dependencies
-    install: function() {
+//    install: function() {
 //        this.installDependencies();
-    }
+//    }
      
-});
+};
