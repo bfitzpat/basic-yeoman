@@ -1,0 +1,8 @@
+{
+  "generator-wsdl2rest": {
+    "promptValues": {
+      "wsdl": "file:/E:/eclipse-photon/eclipse-workspace/empty-spring/src/main/resources/META-INF/wsdl/Address.wsdl",
+      "outdirectory": "bbb"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "generator-wsdl2rest",
+  "version": "0.1.0",
+  "description": "Uses the Fuse wsdl2rest utility to generate a Camel configuration file from a WSDL, creating a Rest DSL-driven service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator",
+    "camel",
+    "fuse",
+    "wsdl",
+    "soap",
+    "red",
+    "hat"
+  ],
+  "author": "Brian Fitzpatrick",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^3.1.0",
+    "shelljs": "^0.8.2"
+  },
+  "files": [
+    "app"
+  ]
+}
