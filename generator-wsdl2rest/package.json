@@ -6,17 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfitzpat/basic-yeoman.git"
+  },
   "keywords": [
     "yeoman-generator",
     "camel",
     "fuse",
     "wsdl",
     "soap",
-    "red",
-    "hat"
+    "redhat"
   ],
   "author": "Brian Fitzpatrick",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "dependencies": {
     "yeoman-generator": "^3.1.0",
     "shelljs": "^0.8.2"
