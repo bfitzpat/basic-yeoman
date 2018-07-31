@@ -1,3 +1,4 @@
 /node_modules/
 /wsdl2rest/
+/target/
 velocity.log
